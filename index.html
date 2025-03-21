@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora</title>
+    <link rel="icon" type="image/png" href="https://images.squarespace-cdn.com/content/66332f216494c206f73b6e07/70bf7770-51e6-483a-86de-717da3ce73f5/agora-logo.png">
+    <link rel="apple-touch-icon" href="https://images.squarespace-cdn.com/content/66332f216494c206f73b6e07/70bf7770-51e6-483a-86de-717da3ce73f5/agora-logo.png">
+    <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/66332f216494c206f73b6e07/70bf7770-51e6-483a-86de-717da3ce73f5/agora-logo.png">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #fullscreen-iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe 
+        id="fullscreen-iframe" 
+        src="https://www.appsheet.com/start/7efe0630-1e9b-4df3-944c-bc6c907193be?ui=mobile" 
+        allowfullscreen 
+        webkitallowfullscreen 
+        mozallowfullscreen
+    ></iframe>
+
+    <script>
+        // Attempt to enter fullscreen on page load
+        window.addEventListener('load', function() {
+            const iframe = document.getElementById('fullscreen-iframe');
+            
+            // Multiple methods to request fullscreen
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+
+            // Fallback: Full viewport covering
+            iframe.style.position = 'fixed';
+            iframe.style.top = '0';
+            iframe.style.left = '0';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+        });
+    </script>
+</body>
+</html>
