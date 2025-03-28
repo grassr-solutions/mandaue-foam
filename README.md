@@ -48,9 +48,6 @@ Filter customer inquiries by:
 1. Open `index.html` in a web browser to access the main application
 2. The application will attempt to launch in fullscreen mode
 
-## License
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 - Email: growyourbusiness@grassr.solutions
 - Phone: (+63) 917 631 6885
