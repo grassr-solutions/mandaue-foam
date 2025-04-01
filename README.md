@@ -57,4 +57,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 - Website: https://www.grassr.solutions/
 
 ## About GRASSR SOLUTIONS
-GRASSR SOLUTIONS is based in Davao City, Philippines, and specializes in providing digital solutions for wholesale businesses.
+GRASSR SOLUTIONS is based in Davao City, Philippines, and specializes in providing digital solutions for businesses.
